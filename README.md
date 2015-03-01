@@ -173,21 +173,12 @@ linux# scp xsibackup root@[yor esxi IP]:/vmfs/volumes/datastore1
 The easy way:
 
 Cut & paste the following line in your ESXi command line and press enter. 
-You can get this URL by clicking the right mouse button and choosing 
-"copy link url" in many browsers.
 
-wget http://sourceforge.net/projects/xsibackup/files/xsibackup_4.2.3.zip/download -O xsibackup.zip
+wget http://33hops.com/downloads/xsibackup.zip -O xsibackup.zip;unzip -o xsibackup.zip;chmod 0700 xsibackup*
 
-This will download version 4.0.2 to the file xsibackup.zip in your local 
-directory structure. You can then unzip it
+This will download last version, unzip it and assign execute rights.
 
-unzip xsibackup.zip
-
-Asign the apropiate permissions
-
-root# chmod 0700 xsibackup
-
-And do a quick test by executing the script without any arguments
+Then do a quick test by executing the script without any arguments
 
 root# ./xsibackup
 
