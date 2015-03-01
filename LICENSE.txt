@@ -1,0 +1,11 @@
+Copyright 2015 | Daniel Jesus Garcia Fidalgo
+33HOPS, Sistemas de Información y Redes, S.L.
+
+You are allowed to use this software for personal or 
+commercial use. You are allowed to redistribute it
+without any modification. You can modify it's source 
+code freely just as long as you do not redistribute 
+the modified source code in any way.
+
+This program is distributed as is WITHOUT ANY WARRANTY; 
+USE AT YOUR OWN RISK.
