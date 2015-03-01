@@ -14,16 +14,11 @@ XSIBACKUP 4.2.3 Automated Backups for ESXi 5.1 and above (5.X & 6.X series).
 
 ONE-LINER INSTALL (recommended):
 
-wget http://33hops.com/downloads/xsibackup.zip -O xsibackup.zip;unzip -o xsibackup.zip;chmod 0700 xsibackup*
+# wget http://33hops.com/downloads/xsibackup.zip -O xsibackup.zip;unzip -o xsibackup.zip;chmod 0700 xsibackup*
 
 Change directory (cd) to the desired install directory, i.e.: # cd /vmfs/volumes/datastore1
 Cut and paste the above one-liner to install XSIBackup in the current
 working directory.
-
-NOTE: do link to your secondary server --link-srv=[second.ESXi.IP]
-if you want to syncronize over IP to a secondary ESXi server and do 
-not forget you have to rerun this command on every reboot as the
-ESXi SSH keys are changed on every reboot.
 
 IMPORTANT:
 
@@ -45,6 +40,15 @@ A: You can't modify it's source code and redistribute the resulting code.
 Q: What happens with the older versions available at sourceforge.net
 A: The last GNU v3 version will be kept at http://sourceforge.net/projects/xsibackup
 for some time.
+
+About SSH keys:
+
+Link to your secondary server --link-srv=[second.ESXi.IP]
+if you want to syncronize over IP to a secondary ESXi box and do 
+not forget you have to rerun this command on every reboot as the
+ESXi SSH keys are changed on every reboot.
+
+About rsync transfers:
 
 Delta algorithm can be slow on big files, in fact from an efficiency
 point of view its only a way to change bandwidth need for CPU cicles. 
@@ -324,4 +328,3 @@ into production.
 This command needs an argument like this --link-srv=192.168.0.100 
 It generates a DSA key locally and adds it to the authorized_keys 
 file at the remote host allowing to communicate without a password.
-
