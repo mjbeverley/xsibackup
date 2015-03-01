@@ -14,7 +14,7 @@ XSIBACKUP 4.2.3 Automated Backups for ESXi 5.1 and above (5.X & 6.X series).
 
 ONE-LINER INSTALL (recommended):
 
-# wget http://33hops.com/downloads/xsibackup.zip -O xsibackup.zip;unzip -o xsibackup.zip;chmod 0700 xsibackup*
+wget http://33hops.com/downloads/xsibackup.zip -O xsibackup.zip;unzip -o xsibackup.zip;chmod 0700 xsibackup*
 
 Change directory (cd) to the desired install directory, i.e.: # cd /vmfs/volumes/datastore1
 Cut and paste the above one-liner to install XSIBackup in the current
