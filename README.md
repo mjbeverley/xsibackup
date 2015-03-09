@@ -10,6 +10,14 @@ XSIBACKUP 4.2.3 Automated Backups for ESXi 5.1 and above (5.X & 6.X series).
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY. USE AT YOUR OWN RISK.
+    
+    	NOTE: Rsync is a different program than XSIBackup released under a 
+	different license. XSIBackup makes use of Rsync through its command 
+	line options and is used as a mere dependency. XSIBackup license
+	affects only XSIBackup code.
+	
+	You can download Rsync source code at: https://download.samba.org/pub/rsync/
+	You can review Rsync license at: https://rsync.samba.org/GPL.html
 
 
 ONE-LINER INSTALL (recommended):
