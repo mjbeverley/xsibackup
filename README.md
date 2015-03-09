@@ -31,7 +31,7 @@ working directory.
 IMPORTANT:
 
 Since version 4.2.3 XSIBackup will change its license model to no-license
-and will be hosted at github.com: https://github.com/danjfk/xsibackup
+and will be hosted at github.com: https://github.com/33hops/xsibackup
 All international copyright laws will be applied by default.
 
 Q: How does this affect me?
