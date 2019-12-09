@@ -73,7 +73,7 @@ xsibackup --backup-point=/vmfs/volumes/backup --backup-type=running --mail-from=
 --mail-to=email.recipient@anotherdomain.com --smtp-srv=smtp.yourdomain.com --smtp-port=25 --smtp-usr=username 
 --smtp-pwd=password
 
-Example 2 (backup 3 VMs even if they are swiched off):
+Example 2 (backup 3 VMs even if they are switched off):
 xsibackup --backup-point=/vmfs/volumes/backup --backup-type=custom --backup-vms="WINDOWSVM1,LINUXVM2,New VM" 
 --mail-from=email.sender@yourdomain.com --mail-to=email.recipient@anotherdomain.com --smtp-srv=smtp.yourdomain.com 
 --smtp-port=25 --smtp-usr=username --smtp-pwd=password
@@ -84,7 +84,7 @@ OPTIONS:
 			You can add as many XSIBackup commands as you want into this file, one per line.
 			The only thing you have to do is add the parameter --time, i.e. --time="Mon 23:30".
 
---backup-point		1) Full path to the backup mount point within the local server, it will tipically be under
+--backup-point		1) Full path to the backup mount point within the local server, it will typically be under
 			/vmfs/volumes, i.e. /vmfs/volumes/backup, /vmfs/volumes/datastore2.
 			2) Full path in a remote ESXi host by using the following syntax:
 			--backup-point="IP.OF.REMOTE.SERVER:PORT:/full/path/todatastore:METHOD(F,D)"
@@ -95,14 +95,14 @@ OPTIONS:
 
 --backup-how		hot | cold
 			Hot (default): selected virtual machines are backed up without being switched off,
-			this is usefull for e-mail, http servers and VMs that cannot be switched off. If 
+			this is useful for e-mail, http servers and VMs that cannot be switched off. If 
 			you do not specify a value for --backup-how a hot backup will be carried out.
 			Cold: selected VMs will be switched off before backup and turned on right afterwards.
-			Good if you need a reboot cicle from time to time to refresh resources and don\'t
+			Good if you need a reboot cycle from time to time to refresh resources and don\'t
 			mind having a little downtime. 
 
 --backup-type		custom | all | running
-			Custom: if this methos is chosen then a list of the VMs to backup must be passed to
+			Custom: if this method is chosen then a list of the VMs to backup must be passed to
 			the --backup-vms option.
 			All: backup -all- VMS.
 			Running: backup only running virtual machines.
@@ -111,7 +111,7 @@ OPTIONS:
 			adding an exclamation sign followed by a list of disks delimited by a semicolon [;]
 			Example: --backup-vms=VM1!scsi0:1;scsi0:2,VM2!disk1;disk2
 			You can use any string, full or partial, that may help identify the disk by its name
-			or by its device descriptor. Take on account that if you use an ambiguous string per
+			or by its device descriptor. Take into account that if you use an ambiguous string per
 			instance "scsi" more than one disk may be excluded. This parameter is only needed if 
 			custom is selected as the --backup-type
 
